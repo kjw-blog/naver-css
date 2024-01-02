@@ -1,13 +1,35 @@
 #header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 #header-center {
+  display: flex;
   width: 1130px;
+  height: 160px;
+  background-color: yellow;
 }
 
 #header-logo,
 #header-search,
 #header-home {
   display: inline-block;
+}
+
+#header-logo {
+  width: 222px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+#header-search {
+  width: 586px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+#header-home {
 }
