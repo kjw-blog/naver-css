@@ -1,0 +1,13 @@
+#header {
+  text-align: center;
+}
+
+#header-center {
+  width: 1130px;
+}
+
+#header-logo,
+#header-search,
+#header-home {
+  display: inline-block;
+}
