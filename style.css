@@ -23,7 +23,7 @@ body {
 }
 
 #header-logo {
-  width: 222px;
+  width: 235px;
   height: 100%;
   align-items: center;
   display: flex;
@@ -39,6 +39,9 @@ body {
   display: inline-block;
   background-position: 0px -158px;
   background-size: 442px 428px;
+  position: relative;
+  top: -6px;
+  left: -9px;
 }
 
 .blind {
@@ -64,4 +67,9 @@ body {
 }
 
 #header-home {
+}
+
+#main {
+  height: 9999px;
+  background: lightgray;
 }
