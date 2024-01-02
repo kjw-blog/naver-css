@@ -27,7 +27,7 @@ body {
 }
 
 #header-logo {
-  width: 235px;
+  width: 238px;
   height: 100%;
   align-items: center;
   display: flex;
@@ -37,12 +37,12 @@ body {
 
 #header-logo a::before {
   background-image: url('./sp_main.png');
+  background-size: 442px 428px;
   width: 222px;
   height: 52px;
   content: '';
   display: inline-block;
   background-position: 0px -158px;
-  background-size: 442px 428px;
   position: relative;
   top: -6px;
   left: -9px;
@@ -78,10 +78,10 @@ body {
 #header-search-wrap {
   border: 2px solid #19ce60;
   border-radius: 2px;
-  width: 530px;
+  width: 532px;
   height: 56px;
   background-color: #fff;
-  display: inline-block;
+  display: inline-flex;
 }
 
 #header-search-input {
@@ -97,13 +97,53 @@ body {
 }
 
 #header-search button {
-  width: 56px;
+  width: 54px;
   height: 56px;
   background: #19ce60;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border: none;
+}
+
+#header-search button::before {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: -420px 0;
+  position: relative;
+  left: -1px;
+}
+
+#header-keyboard {
+  display: inline-flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#header-keyboard .keyboard {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  background-position: -398px -267px;
+  background-repeat: no-repeat;
+}
+
+#header-keyboard .more {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background-position: -170px -151px;
 }
 
 #header-home {
