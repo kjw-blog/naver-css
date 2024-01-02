@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #header {
   display: flex;
   justify-content: center;
@@ -26,6 +32,13 @@
 }
 
 #header-logo a::before {
+  background-image: url('./sp_main.png');
+  width: 222px;
+  height: 52px;
+  content: '';
+  display: inline-block;
+  background-position: 0px -158px;
+  background-size: 442px 428px;
 }
 
 .blind {
