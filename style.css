@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -64,6 +68,42 @@ body {
   align-items: center;
   display: flex;
   flex: 1;
+}
+
+#header-search form {
+  display: flex;
+  margin: 0;
+}
+
+#header-search-wrap {
+  border: 2px solid #19ce60;
+  border-radius: 2px;
+  width: 530px;
+  height: 56px;
+  background-color: #fff;
+  display: inline-block;
+}
+
+#header-search-input {
+  padding: 13px 15px;
+  outline: none;
+  width: 444px;
+  height: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  border: none;
+}
+
+#header-search button {
+  width: 56px;
+  height: 56px;
+  background: #19ce60;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
 }
 
 #header-home {
