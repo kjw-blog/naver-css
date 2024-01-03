@@ -96,6 +96,11 @@ body {
   border: none;
 }
 
+#header-search-input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
 #header-search button {
   width: 54px;
   height: 56px;
@@ -134,6 +139,8 @@ body {
   height: 12px;
   background-position: -398px -267px;
   background-repeat: no-repeat;
+  padding: 0 10px;
+  margin: 0 12px;
 }
 
 #header-keyboard .more {
@@ -144,6 +151,7 @@ body {
   width: 10px;
   height: 5px;
   background-position: -170px -151px;
+  margin-right: 14px;
 }
 
 #header-home {
