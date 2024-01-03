@@ -1,0 +1,244 @@
+#header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e4e8eb;
+}
+
+#header-center {
+  display: flex;
+  width: 1130px;
+  height: 160px;
+}
+
+#header-logo,
+#header-search,
+#header-home {
+  display: inline-block;
+}
+
+#header-logo {
+  width: 238px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+#header-logo a::before {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  width: 222px;
+  height: 52px;
+  content: '';
+  display: inline-block;
+  background-position: 0px -158px;
+  position: relative;
+  top: -6px;
+  left: -9px;
+}
+
+.blind {
+  /*
+    보여지지 않기 위한 요소의 css를 display: none을 사용하지 않는 이유는
+    스크린 리더기가 해당 요소를 무시해버리기 때문이다.
+  */
+
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+#header-search {
+  width: 586px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+#header-search form {
+  display: flex;
+  margin: 0;
+}
+
+#header-search form:focus-within {
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.05);
+}
+
+#header-search-wrap {
+  border: 2px solid #19ce60;
+  border-radius: 2px;
+  width: 532px;
+  height: 56px;
+  background-color: #fff;
+  display: inline-flex;
+}
+
+#header-search-input {
+  padding: 13px 15px;
+  outline: none;
+  width: 444px;
+  height: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  border: none;
+}
+
+#header-search-input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+#header-search button {
+  width: 54px;
+  height: 56px;
+  background: #19ce60;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+#header-search button::before {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: -420px 0;
+  position: relative;
+  left: -1px;
+}
+
+#header-keyboard {
+  display: inline-flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#header-keyboard .keyboard {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  background-position: -398px -267px;
+  background-repeat: no-repeat;
+  margin: 0 12px;
+}
+
+#header-keyboard a:nth-child(1),
+#header-keyboard a:nth-child(2) {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+#header-keyboard a:nth-child(1):hover .keyboard {
+  background-position: -376px -267px;
+}
+
+#header-keyboard .more {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background-position: -170px -151px;
+  margin-right: 14px;
+}
+
+#header-home {
+  font-size: 11px;
+  color: #404040;
+  padding-top: 10px;
+}
+
+#header-home a {
+  color: #404040;
+  text-decoration: none;
+}
+
+/* 
+  nth-child : 부모요소의 몇번째 자식인지
+  nth-of-type : 부모요소의 같은 태그중 몇번째 자식인지
+*/
+#header-home a:nth-child(1) {
+  position: relative;
+  top: -2px;
+}
+
+#header-home a:nth-child(1):hover {
+  text-decoration: underline;
+}
+
+#header-home a:nth-child(1)::after {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-position: -382px -213px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-left: 3px;
+  margin-right: -3px;
+  position: relative;
+  top: 1px;
+}
+
+#header-home a:nth-of-type(2)::after {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 10px;
+  background-position: -264px -296px;
+  margin-right: 8px;
+  position: relative;
+  top: -1px;
+}
+
+#header-home a:nth-of-type(2):hover::after {
+  background-position: -326px -296px;
+}
+
+#header-home a:nth-of-type(3)::after {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 11px;
+  background-position: -365px -245px;
+}
+
+#header-home a:nth-of-type(3):hover::after {
+  background-position: -380px -199px;
+}
+
+.sa_bar {
+  width: 1px;
+  height: 10px;
+  margin: 3px 6px;
+  background-color: #e4e8eb;
+  display: inline-block;
+  vertical-align: -2px;
+}
+
+#main {
+  height: 9999px;
+  background: lightgray;
+}
