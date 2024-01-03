@@ -1,7 +1,39 @@
 #nav {
   display: flex;
+  justify-content: center;
   height: 52px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+#nav-center {
+  display: flex;
+  width: 1130px;
+}
+
+#nav-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#nav-left .green {
+  color: #03c75a;
+}
+
+#nav-left ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-left li {
+  list-style: none;
+  margin-right: 12px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -0.3px;
 }
 
 #nav-left a {
@@ -23,6 +55,8 @@
   height: 21px;
   background-repeat: no-repeat;
   background-position: -420px -73px;
+  margin-right: 4px;
+  vertical-align: -3px;
 }
 #nav-left .shopping {
   display: inline-block;
@@ -30,6 +64,7 @@
   height: 20px;
   background-repeat: no-repeat;
   background-position: -76px -386px;
+  vertical-align: -4px;
 }
 #nav-left .shoppinglive {
   display: inline-block;
@@ -37,20 +72,44 @@
   height: 20px;
   background-repeat: no-repeat;
   background-position: -209px -267px;
+  vertical-align: -4px;
 }
 #nav-left .tv {
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: -256px -212px;
+  vertical-align: -2px;
+  margin-right: -3px;
 }
 
-#nav-left li {
-  list-style: none;
+#nav-left .more {
+  margin-left: 5px;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #202020;
+  vertical-align: 1px;
+  letter-spacing: 0;
 }
 
-#nav-left .green {
-  color: #03c75a;
+#nav-left a:hover .more {
+  text-decoration: underline;
 }
 
-#nav-left {
-  flex: 1;
+#nav-left .more::after {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  display: inline-block;
+  width: 11px;
+  height: 7px;
+  background-position: -350px -310px;
+  background-repeat: no-repeat;
+  content: '';
+  vertical-align: top;
+  margin-left: 7px;
+  vertical-align: 2px;
 }
 
 #nav-right {
