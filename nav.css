@@ -203,3 +203,92 @@
 
 #nav-right {
 }
+
+#nav-weather,
+#nav-mise {
+  display: flex;
+  color: rgb(32, 32, 32);
+  align-items: center;
+}
+
+#nav-mise .grey,
+#nav-weather .grey {
+  font-size: 12px;
+  color: rgb(128, 128, 128);
+  margin-left: 9px;
+  width: 48px;
+}
+
+#nav-weather .sun {
+  background-image: url('./sp_weather.png');
+  background-size: 215px 184px;
+  background-position: -31px 0;
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  margin-right: 9px;
+}
+
+#nav-weather .bold {
+  font-size: 13px;
+  color: #202020;
+  font-weight: bold;
+  margin-left: 5px;
+  width: 26px;
+}
+
+#nav-weather .blue {
+  font-size: 13px;
+  margin-left: 9px;
+  color: rgb(37, 134, 248);
+}
+#nav-weather .red {
+  font-size: 13px;
+  color: rgb(233, 86, 74);
+}
+#nav-weather .slash {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  background-repeat: no-repeat;
+  background-position: -437px -182px;
+  display: inline-block;
+  width: 5px;
+  height: 11px;
+  margin: 0 3px;
+}
+
+#nav-weather .big {
+  font-size: 15px;
+}
+
+#nav-mise .smile {
+  background-image: url('./sp_main.png');
+  background-size: 442px 428px;
+  width: 18px;
+  height: 18px;
+  background-position: -420px -266px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+#nav-mise .bold {
+  font-size: 13px;
+  color: #202020;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+#nav-mise .light {
+  color: rgb(80, 80, 80);
+  font-size: 12px;
+}
+
+#nav-mise .divider {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #e4e8eb;
+  margin: 0 10px;
+  vertical-align: -1px;
+}
