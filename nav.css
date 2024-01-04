@@ -202,6 +202,50 @@
 }
 
 #nav-right {
+  width: 270px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes weatherAnimation {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  20% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  40% {
+    transform: translate3d(0px, -52px, 0px);
+  }
+  40.5% {
+    transform: translate3d(0px, 52px, 0px);
+  }
+  61% {
+    transform: translate3d(0px, 52px, 0px);
+  }
+  81% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes miseAnimation {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  20% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  40% {
+    transform: translate3d(0px, -52px, 0px);
+  }
+  61% {
+    transform: translate3d(0px, -52px, 0px);
+  }
+  81% {
+    transform: translate3d(0px, -104px, 0px);
+  }
+  81.5% {
+    transform: translate3d(0px, 0px, 0px);
+  }
 }
 
 #nav-weather,
@@ -209,6 +253,21 @@
   display: flex;
   color: rgb(32, 32, 32);
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 270px;
+  height: 52px;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+#nav-weather {
+  animation: weatherAnimation 5s infinite;
+}
+#nav-mise {
+  top: 52px;
+  animation: miseAnimation 5s infinite;
 }
 
 #nav-mise .grey,
@@ -259,6 +318,8 @@
 
 #nav-weather .big {
   font-size: 15px;
+  font-weight: bold;
+  color: rgb(32, 32, 32);
 }
 
 #nav-mise .smile {
